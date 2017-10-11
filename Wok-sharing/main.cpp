@@ -27,9 +27,23 @@ void func_for(){
     delete []b;
     delete []result;
 }
+
+void single_master(){
+#pragma omp parallel
+    {
+#pragma omp single
+        printf("test,%d\n",omp_get_thread_num()) ;
+        printf("f,%d\n",omp_get_thread_num()) ;
+        
+#pragma omp barrier
+#pragma omp master
+        cout<<"Master : "<<omp_get_thread_num()<<endl;
+    }
+}
+
 int main(int argc, const char * argv[]) {
     
-    func_for();
-
+    // func_for();
+    single_master();
     return 0;
 }
