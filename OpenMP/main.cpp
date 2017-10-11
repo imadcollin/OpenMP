@@ -11,9 +11,11 @@
 using namespace std;
 
 void fn(){
+    omp_set_num_threads(16);
 #pragma omp parallel
     {
-    cout<<"hello "<<endl;
+#pragma omp critical
+        cout<<"hello from thread:\t"<< omp_get_thread_num()<<endl;
     }
 }
 int main(int argc, char *argv[]) {
