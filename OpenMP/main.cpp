@@ -6,18 +6,17 @@
 //  Copyright © 2017 Imad Collin. All rights reserved.
 //
 #include <stdio.h>
+#include <iostream>
 #include <omp.h>
+using namespace std;
 
-int main(int argc, char *argv[]) {
-   
-    
-    int iam = 0, np = 1;
-        
-#pragma omp parallel  default(shared) private(iam, np)
+void fn(){
+#pragma omp parallel
     {
-
-        np = omp_get_num_threads();
-        iam = omp_get_thread_num();
-        printf("Hello from thread %d out of %d\n", iam, np);
+    cout<<"hello "<<endl;
     }
+}
+int main(int argc, char *argv[]) {
+    
+    fn();
 }
