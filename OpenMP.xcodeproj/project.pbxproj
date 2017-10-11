@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		842BE53F1F8D2B5800B4BF5A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842BE53E1F8D2B5800B4BF5A /* main.cpp */; };
+		847285271F8E34520047C299 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 847285261F8E34520047C299 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		842BE5391F8D2B5800B4BF5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		847285221F8E34520047C299 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		842BE53B1F8D2B5800B4BF5A /* OpenMP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenMP; sourceTree = BUILT_PRODUCTS_DIR; };
 		842BE53E1F8D2B5800B4BF5A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		847285241F8E34520047C299 /* Wok-sharing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Wok-sharing"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847285261F8E34520047C299 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		842BE5381F8D2B5800B4BF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847285211F8E34520047C299 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				842BE53D1F8D2B5800B4BF5A /* OpenMP */,
+				847285251F8E34520047C299 /* Wok-sharing */,
 				842BE53C1F8D2B5800B4BF5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				842BE53B1F8D2B5800B4BF5A /* OpenMP */,
+				847285241F8E34520047C299 /* Wok-sharing */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				842BE53E1F8D2B5800B4BF5A /* main.cpp */,
 			);
 			path = OpenMP;
+			sourceTree = "<group>";
+		};
+		847285251F8E34520047C299 /* Wok-sharing */ = {
+			isa = PBXGroup;
+			children = (
+				847285261F8E34520047C299 /* main.cpp */,
+			);
+			path = "Wok-sharing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 842BE53B1F8D2B5800B4BF5A /* OpenMP */;
 			productType = "com.apple.product-type.tool";
 		};
+		847285231F8E34520047C299 /* Wok-sharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8472852A1F8E34520047C299 /* Build configuration list for PBXNativeTarget "Wok-sharing" */;
+			buildPhases = (
+				847285201F8E34520047C299 /* Sources */,
+				847285211F8E34520047C299 /* Frameworks */,
+				847285221F8E34520047C299 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wok-sharing";
+			productName = "Wok-sharing";
+			productReference = 847285241F8E34520047C299 /* Wok-sharing */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,10 @@
 				ORGANIZATIONNAME = "Imad Collin";
 				TargetAttributes = {
 					842BE53A1F8D2B5800B4BF5A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					847285231F8E34520047C299 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +160,7 @@
 			projectRoot = "";
 			targets = (
 				842BE53A1F8D2B5800B4BF5A /* OpenMP */,
+				847285231F8E34520047C299 /* Wok-sharing */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				842BE53F1F8D2B5800B4BF5A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847285201F8E34520047C299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847285271F8E34520047C299 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +304,22 @@
 			};
 			name = Release;
 		};
+		847285281F8E34520047C299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		847285291F8E34520047C299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -262,6 +337,15 @@
 			buildConfigurations = (
 				842BE5431F8D2B5800B4BF5A /* Debug */,
 				842BE5441F8D2B5800B4BF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8472852A1F8E34520047C299 /* Build configuration list for PBXNativeTarget "Wok-sharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847285281F8E34520047C299 /* Debug */,
+				847285291F8E34520047C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
