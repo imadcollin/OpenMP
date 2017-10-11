@@ -14,8 +14,9 @@ using namespace std;
 void sync(){
     int sum=0;
 #pragma omp parallel for num_threads(100)
-    
+
     for (int i=0; i<1000; i++) {
+#pragma omp atomic   //this will fix the bug and sort out race condition 
         ++sum;
     }
     cout<<sum; //Sum is 980 !!!
