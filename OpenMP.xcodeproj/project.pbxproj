@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		842BE53F1F8D2B5800B4BF5A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842BE53E1F8D2B5800B4BF5A /* main.cpp */; };
 		847285271F8E34520047C299 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 847285261F8E34520047C299 /* main.cpp */; };
+		847285321F8E48920047C299 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 847285311F8E48920047C299 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8472852D1F8E48920047C299 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,8 @@
 		842BE53E1F8D2B5800B4BF5A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		847285241F8E34520047C299 /* Wok-sharing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Wok-sharing"; sourceTree = BUILT_PRODUCTS_DIR; };
 		847285261F8E34520047C299 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8472852F1F8E48920047C299 /* Sychronizing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sychronizing; sourceTree = BUILT_PRODUCTS_DIR; };
+		847285311F8E48920047C299 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8472852C1F8E48920047C299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +81,7 @@
 			children = (
 				842BE53D1F8D2B5800B4BF5A /* OpenMP */,
 				847285251F8E34520047C299 /* Wok-sharing */,
+				847285301F8E48920047C299 /* Sychronizing */,
 				842BE53C1F8D2B5800B4BF5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				842BE53B1F8D2B5800B4BF5A /* OpenMP */,
 				847285241F8E34520047C299 /* Wok-sharing */,
+				8472852F1F8E48920047C299 /* Sychronizing */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +110,14 @@
 				847285261F8E34520047C299 /* main.cpp */,
 			);
 			path = "Wok-sharing";
+			sourceTree = "<group>";
+		};
+		847285301F8E48920047C299 /* Sychronizing */ = {
+			isa = PBXGroup;
+			children = (
+				847285311F8E48920047C299 /* main.cpp */,
+			);
+			path = Sychronizing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +157,23 @@
 			productReference = 847285241F8E34520047C299 /* Wok-sharing */;
 			productType = "com.apple.product-type.tool";
 		};
+		8472852E1F8E48920047C299 /* Sychronizing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847285331F8E48920047C299 /* Build configuration list for PBXNativeTarget "Sychronizing" */;
+			buildPhases = (
+				8472852B1F8E48920047C299 /* Sources */,
+				8472852C1F8E48920047C299 /* Frameworks */,
+				8472852D1F8E48920047C299 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sychronizing;
+			productName = Sychronizing;
+			productReference = 8472852F1F8E48920047C299 /* Sychronizing */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +188,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					847285231F8E34520047C299 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					8472852E1F8E48920047C299 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -161,6 +211,7 @@
 			targets = (
 				842BE53A1F8D2B5800B4BF5A /* OpenMP */,
 				847285231F8E34520047C299 /* Wok-sharing */,
+				8472852E1F8E48920047C299 /* Sychronizing */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				847285271F8E34520047C299 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472852B1F8E48920047C299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847285321F8E48920047C299 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +379,22 @@
 			};
 			name = Release;
 		};
+		847285341F8E48920047C299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		847285351F8E48920047C299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -346,6 +421,15 @@
 			buildConfigurations = (
 				847285281F8E34520047C299 /* Debug */,
 				847285291F8E34520047C299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847285331F8E48920047C299 /* Build configuration list for PBXNativeTarget "Sychronizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847285341F8E48920047C299 /* Debug */,
+				847285351F8E48920047C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
